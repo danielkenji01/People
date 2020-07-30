@@ -12,7 +12,7 @@ const PeopleListItem = props => {
             }}>
             <View style={styles.line}>
                 <Image style={styles.avatar} source={{ uri: thumbnail }}/>
-                <Text styte={styles.lineText}>
+                <Text style={styles.lineText}>
                     {`${first} ${last}`}
                 </Text>
             </View>
@@ -31,11 +31,13 @@ const styles = StyleSheet.create({
     },
     lineText: {
         fontSize: 20,
-        paddingLeft: 15
+        paddingLeft: 15,
+        flex: 7
     },
     avatar: {
         aspectRatio: 1, // Não redimensionamento da imagem
-        width: 40,
+        //width: 40,
+        flex: 1,
         marginLeft: 15,
         borderRadius: 50
     }
