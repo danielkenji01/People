@@ -16,9 +16,9 @@ const PeopleList = props => {
         )
     }); */
 
-    const items = peoples.map(people => 
+    const items = peoples.map((people, index) => 
         <PeopleListItem 
-            key={people.name.first} 
+            key={index} 
             people={people} 
             navigateToPeopleDetail={onPressItem}
         />
